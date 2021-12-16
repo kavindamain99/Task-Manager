@@ -5,6 +5,9 @@ const bp = require('body-parser')
 //connect with db using separate file
 require('./db/connect')
 
+//setup for static files
+app.use(express.static('./public'))
+
 const port = 3000;
 app.use(bp.json())
 app.use(bp.urlencoded({ extended: true }))

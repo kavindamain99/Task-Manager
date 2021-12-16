@@ -7,7 +7,7 @@ router.get('/', hiThere)
 router.get('/tasks', getAllTasks)
 router.post('/newtask', createTask)
 router.get('/task/:id', getTask)
-router.patch('/task/update', updateTask)
-router.delete('/task/delete', deleteTask)
+router.patch('/task/update/:id', updateTask)
+router.delete('/task/delete/:id', deleteTask)
 
 module.exports = router;
